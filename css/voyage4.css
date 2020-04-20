@@ -1,0 +1,387 @@
+/*****************************************/
+/***********TopoSurLaVille**************/
+/*************************************/
+.topo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/voyage4/berlin.gif);
+  box-sizing: content-box;
+  width: 100%;
+  max-width: 1800px;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+}
+
+.titre {
+  font-size: 400%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  opacity: 0.8;
+  padding: 5%;
+  margin: 10%;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+/*****************************************/
+/***********mainitem12******************/
+/*************************************/
+.mainitem1, .mainitem2 {
+  display: flex;
+  flex-direction: row;
+  background-color: #F7F2E0;
+  padding: 1%;
+  margin: 1%;
+  justify-content: center;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+
+.mainitem3 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  background-color: #F2F2F2;
+  padding: 1%;
+  margin: 1%;
+  flex-wrap: wrap;
+}
+
+.mainitem4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #F2F2F2;
+  padding: 1%;
+  margin: 1%;
+  flex-wrap: wrap;
+}
+
+/*****************************************/
+/***********PourquoiVisiter************/
+/*************************************/
+.visite {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  padding: 2%;
+  margin: 2%;
+  font-family: 'Raleway', sans-serif;
+  background-color: white;
+  line-height: 160%;
+  flex-basis: 50%;
+  font-size: 130%;
+}
+
+.visite a {
+  text-decoration: none;
+  font-size: 150%;
+  line-height: 150%;
+  color: white;
+  margin: 1%;
+  background-color: orange;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.visite a:hover {
+  background-color: #F6D8CE;
+  color: white;
+}
+
+.visite h2 {
+  font-weight: bold;
+  margin: 1%;
+}
+
+/*****************************************/
+/***************QueFaire****************/
+/*************************************/
+.todo {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Raleway', sans-serif;
+  flex-basis: 10%;
+  flex-wrap: wrap;
+}
+
+.todo img {
+  width: 280px;
+  height: 200px;
+  border-radius: 10px;
+  padding: 1%;
+  margin: 2%;
+  -webkit-transform: rotate(10deg) scale(1.25);
+  transform: rotate(10deg) scale(1.25);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.todo img:hover {
+  -webkit-transform: rotate(0) scale(1);
+  transform: rotate(0) scale(1);
+  opacity: 0.8;
+}
+
+.todo img {
+  display: flex;
+  flex-direction: column;
+}
+
+/*****************************************/
+/***************QuandPartir**************/
+/*************************************/
+.quand {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1%;
+  margin: 1%;
+  font-family: 'Raleway', sans-serif;
+  text-align: justify;
+}
+
+.quand2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 40%;
+}
+
+.quand2 iframe {
+  width: 100%;
+}
+
+.meteo {
+  line-height: 40px;
+  width: 50%;
+}
+
+.meteo h2 {
+  background-color: orange;
+  color: white;
+  padding: 2%;
+  margin: 2%;
+  margin-right: 60%;
+}
+
+.meteo a {
+  text-decoration: none;
+  color: red;
+}
+
+.meteo a:hover {
+  color: orange;
+}
+
+.quand2 {
+  display: flex;
+  padding: 1%;
+  margin: 1%;
+}
+
+/*****************************************/
+/***************TipsPerso****************/
+/*************************************/
+.tips {
+  border: solid black 5px;
+  border-style: dotted;
+  flex-basis: 50%;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding: 1%;
+}
+
+.tips p {
+  text-align: justify;
+  margin: 1%;
+}
+
+.tips img {
+  width: 30%;
+  height: 60%;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 1%;
+  box-shadow: 8px 8px 8px #aaa;
+}
+
+.tips h2 {
+  background-color: orange;
+  padding: 2%;
+  margin: 3%;
+  color: white;
+}
+
+/*****************************************/
+/***************Quoiprevoir*************/
+/*************************************/
+.prep {
+  padding: 1%;
+  margin: 1%;
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  line-height: 40px;
+  text-align: justify;
+  font-size: 120%;
+}
+
+.prep h2 {
+  text-align: center;
+  font-size: 200%;
+  margin: 1%;
+}
+
+.prep p {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1%;
+}
+
+.prep a {
+  text-decoration: none;
+  background-color: green;
+  border-radius: 10px;
+  color: white;
+  padding: 0.5%;
+  margin-left: 20%;
+}
+
+.prep a:hover {
+  background-color: white;
+  color: black;
+  padding: 1%;
+  margin-left: 22%;
+}
+
+#carroussel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.shadow img {
+  width: 250px;
+  height: 200px;
+  -webkit-filter: grayscale(1) blur(1px);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.shadow:hover img {
+  width: 150px;
+  /* on affiche l'image au carré */
+  height: 150px;
+  border-radius: 50%;
+  /* on arrondit l'image */
+  -webkit-transform: rotate(360deg);
+  /* rotation de l'image */
+  transform: rotate(360deg);
+  -webkit-filter: grayscale(0) blur(0px);
+}
+
+/*****************************************/
+/***********SepcialiteLocale************/
+/*************************************/
+.specialite {
+  padding: 1%;
+  margin: 1%;
+  font-family: 'Raleway', sans-serif;
+  background-color: white;
+  text-align: center;
+}
+
+.specialite img {
+  width: 10%;
+  margin: 1%;
+  padding: 1%;
+}
+
+.specialite p {
+  margin: 1%;
+  background-color: lightgrey;
+}
+
+/*****************************************/
+/***********Musique*********************/
+/*************************************/
+.musique {
+  padding: 1%;
+  margin: 1%;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 100%;
+}
+
+.musique figcaption {
+  padding: 1%;
+  margin: 1%;
+}
+
+.musique figure {
+  background: linear-gradient(yellow, orange);
+  margin: 2%;
+  padding: 3%;
+  border-radius: 10px;
+}
+
+/*****************************************/
+/***********Insolite********************/
+/*************************************/
+.insolite {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 1%;
+  margin: 1%;
+  font-family: 'Raleway', sans-serif;
+  background-color: white;
+  text-align: center;
+}
+
+.insolite p {
+  background-color: orange;
+  padding: 2%;
+  margin: 2%;
+  border-radius: 10px;
+  line-height: 30px;
+  color: white;
+}
+
+.insolite img {
+  border-radius: 10px;
+}
+
+/*****************************************/
+/***********Données*********************/
+/*************************************/
+.donnees {
+  font-size: 100%;
+  text-align: center;
+  margin: 2%;
+  padding: 4%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.donnees table, th, td {
+  line-height: 40px;
+  border: 1px solid black;
+  border-style: dotted;
+}
+
+.donnees caption {
+  font-size: 150%;
+  padding: 1%;
+  background-color: orange;
+  color: white;
+  margin: 1%;
+  border-radius: 10px;
+}

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="../css/voyages.css">
+    <link rel="stylesheet" href="../css/formulaire.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto+Mono:ital,wght@1,300&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section id="titreh">
+            <a href="../voyages.html" id="retourh"><h1>Voyagefinement</h1></a>
+            <h2>"Le plus beau voyage, c'est celui qu'on n’a pas encore fait" - <span id="auteurh">Loïck Peyron</span>
+            </h2>
+            <nav>
+                <ul id="continenth">
+                    <li>
+                        <h2>Continents</h2>
+                        <ul id="menuhoverh">
+                            <li>
+                                <h3>Amérique du Nord&nbsp;<img src="../images/header/AMN.png" alt="amerique du nord"
+                                        class="imgh" /></h3>
+                                <ul id="dest1h">
+                                    <li><a href="../voyages/voyage1.html">New-York</a></li>
+                                    <li><a href="../voyages/voyage5.html">Trois Rivières</a></li>
+                                </ul>
+                            </li>
+                            <hr>
+                            <li>
+                                <h3>Europe&nbsp;<img src="../images/header/ERP.png" alt="Europe" class="imgh" /></h3>
+                                <ul id="dest2h">
+                                    <li><a href="../voyages/voyage3.html">Athènes</a></li>
+                                    <li><a href="../voyages/voyage4.html">Berlin</a></li>
+                                    <li><a href="../voyages/voyage2.html">Florence</a></li>
+                                </ul>
+                            </li>
+                            <hr>
+                            <li>
+                                <h3>Asie&nbsp;<img src="../images/header/asie.png" alt="Asie" class="imgh" /></h3>
+                                <ul id="dest3h">
+                                    <li><a href="../voyages/voyage6.html">Krabi</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul id="menutargeth">
+                    <li> <a href="#equipeh" id="titretargeth">
+                            <h2 title="cliquer">L'équipe</h2>
+                        </a>
+                        <ul id="equipeh">
+                            <li>
+                                <h3>Louise</h3>
+                                <ul>
+                                    <li><a href="../voyages/voyage3.html">Athènes</a></li>
+                                    <li><a href="../voyages/voyage4.html">Berlin</a></li>
+                                </ul>
+                            </li>
+                            <hr>
+                            <li>
+                                <h3>Martin</h3>
+                                <ul>
+                                    <li><a href="../voyages/voyage6.html">Krabi</a></li>
+                                    <li><a href="../voyages/voyage5.html">Trois Rivières</a></li>
+                                </ul>
+                            </li>
+                            <hr>
+                            <li>
+                                <h3>Maxime</h3>
+                                <ul>
+                                    <li><a href="../voyages/voyage2.html">Florence</a></li>
+                                    <li><a href="../voyages/voyage1.html">New-York</a></li>
+                                </ul>
+                            </li>
+                            <hr>
+                            <li>
+                                <a href="#titretargeth" id="croixah">
+                                    <img src="../images/header/croixheader.png" alt="croix pour fermer"
+                                        id="logocroixheader" />
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <form method="POST" action="voyages.html" id="formulaire">
+            <section id="ligne">
+                <fieldset id="vous">
+                    <legend>
+                        Qui êtes-vous?
+                    </legend>
+                    <p>
+                        <label for="nom">Nom</label>
+                        <input type="text" name="nom" id="nom" required>
+                    </p>
+                    <p>
+                        <label for="prenom">Prénom</label>
+                        <input type="text" name="prenom" id="prenom" required>
+                    </p>
+                    <p>
+                        <label for="date">Date de Naissance</label>
+                        <input type="date" name="naissance" id="naissance">
+                    </p>
+                    <p>
+                        <label for="mail">Email</label>
+                        <input type="email" name="mail" id="mail" required>
+                    </p>
+                    <p>
+                        <label for="tel">Téléphone</label>
+                        <input type="tel" name="tel" id="tel">
+                    </p>
+                </fieldset>
+                <fieldset id="nous">
+                    <legend>
+                        Qui voulez-vous joindre?
+                    </legend>
+                    <p>
+                        <span>Quel voyageur contacter:</span>
+                        <section class="m">
+                            <input type="radio" name="voyageurs" value="Louise" id="louise"><label
+                                for="louise">Louise</label>
+                        </section>
+                        <section class="m">
+                            <input type="radio" name="voyageurs" value="Martin" id="martin"><label
+                                for="martin">Martin</label>
+                        </section>
+                        <section class="m">
+                            <input type="radio" name="voyageurs" value="Maxime" id="maxime"><label
+                                for="maxime">Maxime</label>
+                        </section>
+                    </p>
+                    <p>
+                        <label for="voyage">Pour quel voyage:</label>
+                        <select name="voyage" id="voyage">
+                            <option value="">Choississez la destination</option>
+                            <option value="athenes">Athènes</option>
+                            <option value="berlin">Berlin</option>
+                            <option value="florence">Florence</option>
+                            <option value="krabi">Krabi</option>
+                            <option value="Newyork">New York</option>
+                            <option value="troisriviere">Trois Rivière</option>
+                        </select>
+                    </p>
+                    <p>
+                        <span>Joindre nos voyageurs par:</span>
+                        <section class="m">
+                            <input type="checkbox" name="sms" id="sms"><label for="sms">SMS</label><br>
+                        </section>
+                        <section class="m">
+                            <input type="checkbox" name="mail" id="mail"><label for="mail">Email</label><br>
+                        </section>
+                    </p>
+                </fieldset>
+            </section>
+            <section id="texte">
+                <fieldset>
+                    <legend>Description</legend>
+                    <p>
+                        <label for="date">Indiquez la date d'aujourd'hui</label>
+                        <input type="date" name="date" id="date" required>
+                    </p>
+                    <p>
+                        <label for="text">Dites nous tout</label>
+                        <textarea name="text" id="text" cols="30" rows="10"
+                            placeholder="demandez nous tout ce que vous voulez, questions, précisions, demandes. Nous répondons à tout..." required></textarea>
+                    </p>
+                </fieldset>
+            </section>
+            <section>
+                <input type="submit" value="Envoyer" id="envoyer">
+            </section>
+        </form>
+    </main>
+    <footer>
+        <section id="footervoyage">
+            <section id="accesrapidefooter">
+                <section id="homefooter">
+                    <a href="../voyages.html">
+                        <img src="../images/iconhome.jpg" alt="accueil">
+                    </a>
+                </section>
+                <section id="louisemartinfooter">
+                    <section id="louisefooter">
+                        <a href="formulaire.html">
+                            <img src="../images/louise.jpg" alt="louise">
+                        </a>
+                    </section>
+                    <section id="martinfooter">
+                        <a href="formulaire.html">
+                            <img src="../images/martin.jpg" alt="martin">
+                        </a>
+                    </section>
+                </section>
+                <section id="maximefooter">
+                    <a href="formulaire.html">
+                        <img src="../images/maxime.jpg" alt="maxime">
+                    </a>
+                </section>
+            </section>
+            <section id="liensfooter">
+                <h4>Destinations:</h4>
+                <p>Amerique:</p>
+                <ul>
+                    <li>
+                        <a href="../voyages/voyage1.html">New York</a>
+                    </li>
+                    <li>
+                        <a href="../voyages/voyage5.html">Trois Rivières</a>
+                    </li>
+                </ul>
+                <p>
+                    Asie:
+                </p>
+                <ul>
+                    <li>
+                        <a href="../voyages/voyage6.html">Krabi</a>
+                    </li>
+                </ul>
+                <p>
+                    Europe:
+                </p>
+                <ul>
+                    <li>
+                        <a href="../voyages/voyage3.html">Athènes</a>
+                    </li>
+                    <li>
+                        <a href="../voyages/voyage4.html">Berlin</a>
+                    </li>
+                    <li>
+                        <a href="../voyages/voyage2.html">Florence</a>
+                    </li>
+                </ul>
+            </section>
+            <section id="contactfooter">
+                <h4>Contacts</h4>
+                <p>
+                    Pour toutes questions supplémentaires, n'hésitez pas à nous contacter
+                </p>
+                <a href="formulaire.html">Louise</a>
+                <a href="formulaire.html">Martin</a>
+                <a href="formulaire.html">Maxime</a>
+            </section>
+        </section>
+    </footer>
+</body>
+
+</html>

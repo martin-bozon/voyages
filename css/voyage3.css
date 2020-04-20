@@ -1,0 +1,467 @@
+/*****************************************/
+/***********TopoSurLaVille**************/
+/*************************************/
+main {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 1800px;
+  min-width: auto;
+}
+
+.topo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/voyage3/athenes.gif);
+  box-sizing: content-box;
+  max-width: 1800px;
+  height: 600px;
+  padding: 1px;
+  margin: 1%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+}
+
+.titre {
+  font-size: 400%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  opacity: 0.8;
+  padding: 5%;
+  margin: 10%;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+.middle {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0.5%;
+}
+
+.card {
+  cursor: pointer;
+  width: 340px;
+  height: 480px;
+}
+
+.front, .back {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform .6s linear;
+}
+
+.front img {
+  height: 100%;
+}
+
+.front {
+  background: #f1f1f1;
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.back {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.backcontent {
+  text-align: center;
+  width: 100%;
+  color: #2E006C;
+}
+
+.card:hover>.front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.card:hover>.back {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+/*****************************************/
+/***********mainitem12******************/
+/*************************************/
+.mainitem1 {
+  display: flex;
+  flex-direction: row;
+  background-color: #1560BD;
+  padding: 2%;
+  margin: 1%;
+  justify-content: space-around;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+
+.mainitem1, .mainitem2 {
+  display: flex;
+  flex-direction: row;
+  background-image: url(../images/voyage3/food3.jpg);
+  background-position: center;
+  padding: 2%;
+  margin: 1%;
+  justify-content: space-around;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+
+.mainitem3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #A9EAFE;
+  padding: 2%;
+  margin: 1%;
+  flex-wrap: wrap;
+}
+
+.mainitem4 {
+  display: flex;
+  justify-content: center;
+  background-color: #1560BD;
+  padding: 2%;
+  margin: 1%;
+  flex-wrap: wrap;
+}
+
+.mainitem5 {
+  display: flex;
+  justify-content: center;
+  background-color: #1560BD;
+  padding: 2%;
+  margin: 1%;
+}
+
+/*****************************************/
+/***********PourquoiVisiter************/
+/*************************************/
+.visite {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1%;
+  margin: 1%;
+  font-family: 'Raleway', sans-serif;
+  background-color: white;
+  line-height: 30px;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.visite p {
+  text-align: center;
+}
+
+.visite h2 {
+  background-color: #1560BD;
+  color: white;
+  padding: 1%;
+}
+
+/*****************************************/
+/***************QueFaire****************/
+/*************************************/
+.todo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: 'Raleway', sans-serif;
+  flex-wrap: wrap;
+}
+
+.middle {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: 0.5%;
+  text-align: center;
+}
+
+.card {
+  cursor: pointer;
+  width: 340px;
+  height: 480px;
+}
+
+.front, .back {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform .6s linear;
+  -moz-box-shadow: 4px 4px 10px #888;
+  -webkit-box-shadow: 4px 4px 10px #888;
+  box-shadow: 8px 8px 6px #888;
+  border-radius: 20px;
+}
+
+.front img {
+  height: 100%;
+}
+
+.front {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.back {
+  transform: perspective(600px) rotateY(180deg);
+  background-color: #A9EAFE;
+}
+
+.backcontent {
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+  margin-top: 50%;
+  padding: 1%;
+  background-color: #74D0F1;
+  text-align: center;
+  width: 100%;
+}
+
+.card:hover>.front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.card:hover>.back {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+/*****************************************/
+/***************QuandPartir**************/
+/*************************************/
+.quand {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1%;
+  margin: 1% auto;
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  line-height: 150%;
+  text-align: justify;
+  font-size: 120%;
+  color: #003366;
+}
+
+.quand p {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1%;
+}
+
+.quand h2 {
+  color: white;
+  text-align: center;
+  font-size: 200%;
+  background-color: #1B019B;
+  padding: 3%;
+  margin: 6%;
+  border-radius: 10px;
+}
+
+/*****************************************/
+/***************Quoiprevoir*************/
+/*************************************/
+.prep {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1%;
+  margin: 1% auto;
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  line-height: 150%;
+  text-align: justify;
+  font-size: 120%;
+  color: #003366;
+}
+
+.prep h2 {
+  text-align: center;
+  font-size: 200%;
+  color: white;
+  background-color: #1B019B;
+  padding: 3%;
+  margin: 6%;
+  border-radius: 10px;
+}
+
+.prep p {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1%;
+}
+
+/*****************************************/
+/***************TipsPerso****************/
+/*************************************/
+.tips1 {
+  display: flex;
+  flex-direction: row;
+  background-image: url("../images/voyage3/athenes6.jpg");
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding: 1%;
+  border-radius: 40px;
+  color: #003366;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  height: 200px;
+  flex-basis: 40%;
+}
+
+.tips1 p {
+  background-color: white;
+  padding: 2%;
+  text-align: center;
+  border-radius: 30px;
+  margin-top: 8%;
+}
+
+.tips1:hover {
+  margin-left: -20px;
+}
+
+.tips1 span {
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.tips2 {
+  display: flex;
+  flex-direction: row;
+  background-image: url("../images/voyage3/athenes8.jpg");
+  background-position: center;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding: 1%;
+  border-radius: 40px;
+  color: #003366;
+  margin-left: 0px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  height: 200px;
+  flex-basis: 40%;
+}
+
+.tips2 p {
+  background-color: white;
+  padding: 2%;
+  text-align: center;
+  border-radius: 30px;
+  margin-top: 8%;
+}
+
+.tips2:hover {
+  margin-right: -20px;
+}
+
+.tips2 span {
+  font-size: 150%;
+  font-weight: bold;
+}
+
+/*****************************************/
+/***********SepcialiteLocale************/
+/*************************************/
+.specialite {
+  display: flex;
+  justify-content: space-around;
+  padding: 1%;
+  margin: 1%;
+  background-color: white;
+  text-align: center;
+  color: #003366;
+  font-family: 'Raleway', sans-serif;
+  flex-basis: 20%;
+  flex-wrap: wrap;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  box-shadow: 8px 8px 6px black;
+}
+
+.specialite:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  box-shadow: 1px 1px 1px;
+}
+
+.specialite p, .specialite h3 {
+  line-height: 40px;
+  font-size: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.specialite a {
+  text-decoration: none;
+  background-color: #048B9A;
+  color: white;
+  padding: 5%;
+  font-size: 120%;
+  margin: 15%;
+}
+
+.specialite a:hover {
+  background-color: #80D0D0;
+  margin: 18%;
+  padding: 7%;
+}
+
+/*****************************************/
+/***********Données*********************/
+/*************************************/
+.donnees {
+  font-size: 100%;
+  text-align: center;
+  margin: 2%;
+  padding: 2%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.donnees table, th, td {
+  line-height: 40px;
+  border: 1px solid black;
+  border-style: dotted;
+}
+
+.donnees caption {
+  font-size: 200%;
+  padding: 1%;
+}
+/*****************************************/
+/***********Insolite********************/
+/*************************************/
+.insolite {
+  width: 100%;
+  padding: 1%;
+  margin: 1%;
+  font-family: 'Raleway', sans-serif;
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.insolite p {
+  background-color: #00CCCB;
+  color: white;
+  padding: 2%;
+  margin: 2%;
+  border-radius: 10px;
+  font-size: 150%;
+}

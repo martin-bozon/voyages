@@ -1,0 +1,393 @@
+html
+    {
+        margin: 0;
+        background: url("../images/voyage5/fond.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+body
+    {
+        margin: 0;
+    }
+p   
+    {
+        font-size: 20px;
+    }
+hr  
+    {
+        border: 2px solid black;
+        width: 10%;
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+    }
+.decov5
+    {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+.decov5 h1  
+    {
+        font-size: 30px;
+    }
+.decov5 img
+    {
+        height: 20vh;
+    }
+.hovertxtv5:hover
+    {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px gray;
+    }
+/* Première partie */
+/* Pourquoi */
+#pourquoiv5
+    {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5vh;
+        background-color: rgba(255, 255, 255, 0.541);
+        backdrop-filter: blur(6px);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+#pourquoiv5 h1
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 50px;
+        text-shadow: 0px 0px 10px black;
+        height: 70vh;
+        width: 100%;
+        margin: 0;
+        background-image: url("../images/voyage5/centre-ville.jpg");
+        background-position: 100% 50%;
+        background-size: cover;
+    }
+#pourquoiv5 p
+    {
+        text-align: center;
+    }
+/* Info */
+#infov5
+    {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10vh;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.541);
+        backdrop-filter: blur(6px);
+    }
+#savoirv5
+    {
+        display: flex;
+        flex-direction: row;
+    }
+/* Quand */
+#quandv5
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        flex-basis: 70%;
+        height: 50vh;
+        margin-bottom: 5vh;
+    }
+#quandv5 table
+    {
+        border-spacing: 0;
+    }
+#quandv5 h1
+    {
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+#quandv5 h2 
+    {
+        font-size: 20px;
+    }
+/* Premier tableau */
+#periodev5
+    {
+        width: 70%;
+    }
+#periodev5 th
+    {
+        border: 1px solid black;
+        padding-top: 0.5vh;
+        padding-bottom: 0.5vh;
+        font-size: 10px;
+    }
+tbody
+    {
+        height: 2vh;
+    }
+#periodev5 td
+    {
+        border: 1px solid black;
+        width: 8.3%; 
+    }
+/* Deuxieme tableau */
+#legendev5
+    {
+        width: 20%;
+    }
+#legendev5 th   
+    {
+        border: 1px solid black;
+        padding-top: 0.5vh;
+        padding-bottom: 0.5vh;
+        font-size: 10px;
+        width: 15%; 
+    }
+#legendev5 td
+    {
+        border: 1px solid black;
+        width: 15%; 
+    }
+/* couleur */
+.rouge
+    {
+        background-color: red;
+        height: 2vh;
+    }
+.orange
+    {
+        background-color: orange;
+        height: 2vh;
+    }
+.vert
+    {
+        background-color: green;
+        height: 2vh;
+    }
+/* Quoi */
+#quoiv5
+    {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 30%;
+        border-top: 1px solid black;
+        border-left: 1px solid black ;
+        background-color: rgba(78, 197, 245, 0.63);
+    }
+#quoiv5 h1
+    {
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+#quoiv5 h2  
+    {
+        text-decoration: underline;
+        text-underline-position: under;
+    }
+#listev5
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+#listev5 section
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+/* Deuxième partie */
+#partie2v5
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+/* Que */
+#quev5
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10vh;
+        background-color: rgba(255, 255, 255, 0.541);
+        backdrop-filter: blur(6px);
+        margin-left: 2vw;
+        margin-right: 2vw;
+        border-radius: 10px;
+    }
+#quev5 h1
+    {
+        font-size: 30px;
+    }
+#quev5 h2
+    {
+        font-size: 25px;
+    }
+#quev5 p
+    {
+        width: 80%;
+        text-align: justify;
+    }
+.imghoverv5
+    {
+        width: 30vw;
+        height: 50vh;
+        -webkit-filter: grayscale(100%);
+	    filter: grayscale(100%);
+	    -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+.imghoverv5:hover
+    {
+        -webkit-filter: grayscale(0);
+	    filter: grayscale(0);
+    }
+#quev5 a
+    {
+        text-decoration: none;
+        color: black;
+        padding-top: 0.3vh;
+    }
+#quev5 button
+    {
+        margin: 0;
+        text-align: center;
+        height: 4vh;
+        box-shadow: 0px 0px 3px grey inset;
+        border: 1px solid grey;
+    }
+#quev5 button:hover
+    {
+        background-color: burlywood;
+    }
+#quev5 :nth-child(even)
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 5vh;
+    }
+#quev5 :nth-child(odd)
+    {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5vh;
+    }
+/* Section */
+#quev5 :nth-child(even) section
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+#quev5 :nth-child(odd)  section
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+/* Bonus */
+#bonusv5
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.541);
+        backdrop-filter: blur(6px);
+        margin-left: 2vw;
+        margin-right: 2vw;
+        border-radius: 10px;
+        margin-bottom: 10vh;
+    }
+#bonusv5 h1 
+    {
+        margin-bottom: 10vh;
+    }
+/* Spe */
+#spev5
+    {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 50vh;
+        justify-content: space-evenly;
+        margin-bottom: 10vh;
+    }
+/* Photo amphi */
+#amphiv5
+    {
+        width: 40vw;
+        height: 100%;
+        background: url("../images/voyage5/amphi.jpg");
+        background-position: center;
+        box-shadow: 3px 3px 10px black;
+    }
+#amphiv5txt 
+    {
+        display: none;
+        height: 100%;
+    }
+#amphiv5:hover #amphiv5txt
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background:rgba(255, 255, 255, 0.511);
+        backdrop-filter: blur(1px);
+    }
+/* Photo festival */
+#festivalv5
+    {
+        width: 40vw;
+        height: 100%;
+        background: url("../images/voyage5/festival.jpg");
+        background-position: center;
+        box-shadow: 3px 3px 10px black;
+    }
+#festivalv5txt
+    {
+        display: none;
+        height: 100%;
+    }
+#festivalv5:hover #festivalv5txt
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background:rgba(255, 255, 255, 0.511);
+        backdrop-filter: blur(1px);
+    }
+/* Tips */
+#tipsv5
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10vh;
+        background-color: rgba(255, 255, 255, 0.541);
+        backdrop-filter: blur(6px);
+        margin-left: 2vw;
+        margin-right: 2vw;
+        border-radius: 10px;
+    }
+#tipsv5 p   
+    {
+        text-align: center;
+        margin-top: 0;
+    }
